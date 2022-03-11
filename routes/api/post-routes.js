@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    Post.fineOne({
+    Post.findOne({
         where: {
             id: req.params.id
         },
